@@ -1,1 +1,15 @@
 /* Here is your custom css styles. */
+
+body {
+    cursor: url(../medias/mouse_icon/default.cur), default;
+}
+
+a {
+    cursor: url(../medias/mouse_icon/pointer.cur), default !important;
+}
+
+.main--content p {
+    text-indent: 2em;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
