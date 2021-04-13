@@ -1,10 +1,12 @@
-// 代码块一键复制
+// // 代码块一键复制
 
 $(function () {
-    var $copyIcon = $('<i class="fas fa-copy code_copy" title="复制代码" aria-hidden="true"></i>')
+    // var $copyIcon = $('<i class="fas fa-copy code_copy" title="复制代码" aria-hidden="true"></i>')
+    var $copyIcon = $('<span class="fas fa-copy code_copy btn-copy">COPY</span>')
     var $notice = $('<div class="codecopy_notice"></div>')
-    // $('.code-area').prepend($copyIcon)
-    // $('.code-area').prepend($notice)
+    $('.code-area').prepend($copyIcon)
+    $('.code-area').prepend($notice)
+
     // “复制成功”字出现
     function copy(text, ctx) {
         if (document.queryCommandSupported && document.queryCommandSupported('copy')) {

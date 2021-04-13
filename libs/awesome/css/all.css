@@ -1086,8 +1086,9 @@ readers do not read off random characters that represent icons */
 .fa-cookie-bite:before {
   content: "\f564"; }
 
-.fa-copy:before {
-  content: "\f0c5"; }
+/* 代码复制图标 */
+/* .fa-copy:before {
+  content: "\f0c5"; } */
 
 .fa-copyright:before {
   content: "\f1f9"; }

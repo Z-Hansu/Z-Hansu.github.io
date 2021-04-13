@@ -4,6 +4,14 @@ body {
     cursor: url(../medias/mouse_icon/default.cur), default;
 }
 
+:root {
+    --theme-color: #7af;
+}
+
+.theme-bg-color {
+    background-color: var(--theme-color) !important;
+}
+
 a {
     cursor: url(../medias/mouse_icon/pointer.cur), default !important;
 }
@@ -12,4 +20,45 @@ a {
     text-indent: 2em;
     font-size: 1.3rem;
     line-height: 2rem;
+}
+
+.btn-copy {
+    display: inline-block;
+    user-select: none;
+    padding: 2px 6px;
+    opacity: .8;
+    color: #bfc4c8;
+    background: 0 0;
+    border: 2px solid #bfc4c8;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    transition: .2s;
+    text-transform: uppercase;
+    transform: scale(.9);
+}
+
+.btn-copy:hover {
+    box-shadow: 0 2px 6px 0 #cdcdcd;
+}
+
+.publish-date, .publish-author {
+    color: var(--theme-color);
+}
+
+.page-footer {
+    height: 80px;
+    padding: 0 !important;
+}
+
+.page-footer .container {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .copy-right {
+    text-align: center;
+    width: 80%;
+    display: inline-block;
 }
