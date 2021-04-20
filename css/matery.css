@@ -150,7 +150,7 @@ code {
 
 .code_lang {
     position: absolute;
-    top: 1.2rem;
+    top: 1.3rem;
     left: 80px;
     line-height: 0;
     font-weight: bold;
@@ -1918,6 +1918,50 @@ footer .copy-right {
 .top-scroll .btn-floating i {
     line-height: 48px;
     font-size: 1.8rem;
+}
+
+.cd-top {
+    position:fixed;
+    right:25px;
+    top:-900px;
+    z-index:99;
+    width:70px;
+    height:900px;
+    background:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/scroll.png) no-repeat center;
+    background-size:contain;
+    -webkit-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur),auto;
+    opacity:1
+}
+.cd-top.cd-is-visible {
+    opacity:1;
+    top:-326px
+}
+.cd-top.cd-fade-out {
+    opacity:1
+}
+.cd-top:hover {
+    opacity:1
+}
+.cd-top span {
+    display:none;
+    color:#000;
+    position:absolute;
+    bottom:0;
+    height:20px;
+    width:50px;
+    text-align:center
+}
+@media screen and (max-width:860px) {
+    .cd-top {
+    display:none;
+    height:60px;
+    width:50px
+}
+.cd-top span {
+    height:10px;
+    width:50px
 }
 
 @media screen and (min-width: 368px) and (max-width: 767px) {
