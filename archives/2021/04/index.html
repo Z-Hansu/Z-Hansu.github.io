@@ -386,13 +386,23 @@
                                 </span>
                                 <span class="publish-author">
                                     
-                                    <i class="fas fa-user fa-fw"></i>
-                                    Hansu
+                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/categories/%E7%A8%8B%E5%BA%8F/" class="post-category">
+                                    程序
+                                    </a>
+                                    
                                     
                                 </span>
                             </div>
                         </div>
 
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/hexo/"><span class="chip bg-color">hexo</span></a>
+                            
+                        </div>
                         
                     </div>
                 </div>
@@ -581,7 +591,7 @@ $(function () {
                 if ($(window).height() > 950) {
                     $('.cd-top.cd-is-visible').css('top', '0')
                 } else {
-                    $('.cd-top.cd-is-visible').css('top', ($(window).height() - 950) + 'px')
+                    $('.cd-top.cd-is-visible').css('top', ($(window).height() - 1050) + 'px')
                 }
             } else {
                 $('.changeSkin-gear').css('bottom', '-999px')
