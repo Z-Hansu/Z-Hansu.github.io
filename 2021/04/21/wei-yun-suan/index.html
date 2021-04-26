@@ -401,8 +401,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%A8%8B%E5%BA%8F/" class="post-category">
-                                程序
+                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
+                                编程
                             </a>
                         
                     </div>
@@ -414,7 +414,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-04-09
+                    2021-04-21
                 </div>
                 
 
@@ -439,19 +439,17 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p><strong><center>位运算符是在数字底层（即表示数字的32个数位）进行操作的。</center></strong></p>
-<p style="text-indent: 2em;">在学习位运算之前，要知道什么是原码、反码、补码，还有什么是机器数和真值。机器数是指一个数在计算机中的二进制表现形式，并且是含有符号的，最高位存放符号，0为正，1为负。因为机器数有符号位，所以机器数表现的值就不是它自身值。为了进行区分，就有了真值的概念，真值才是机器数的真正数值。比如十进制中的5，机器数是<code>0000 0101</code>，真值是<code>+5</code>；如果是-5，那么机器数就是<code>1000 0101</code>，真值为<code>-5</code>。</p>
-<p style="text-indent: 2em;">原码、反码、补码是机器存储一个具体数字的编码方式。</p>
+<h2 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h2><h3 id="机器数与真值"><a href="#机器数与真值" class="headerlink" title="机器数与真值"></a>机器数与真值</h3><p style="text-indent: 2em;">机器数是指一个数在计算机中的二进制表现形式，最高位是符号位，0为正，1为负。因为第一位是符号位，所以机器数的形式值就不是本身真正的数值，本身真正的数值称为真值。</p>
 
-<h2 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h2><h3 id="机器数与真值"><a href="#机器数与真值" class="headerlink" title="机器数与真值"></a>机器数与真值</h3><p>机器数：是指一个数在计算机中的二进制表现形式，并且是含有符号的，最高位存放符号，0为正，1为负。<br>真值：机器数的真正数值。</p>
 <h3 id="原码、反码与补码"><a href="#原码、反码与补码" class="headerlink" title="原码、反码与补码"></a>原码、反码与补码</h3><h4 id="原码"><a href="#原码" class="headerlink" title="原码"></a>原码</h4><p>原码就是机器数(符号位加上真值的绝对值)。第一位表示符号，其余位表示值。比如：</p>
-<pre class="line-numbers language-none"><code class="language-none">+1 &#x3D; [原码]0000 0001；
--1 &#x3D; [原码]1000 0001。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h4 id="反码"><a href="#反码" class="headerlink" title="反码"></a>反码</h4><p>反码的表示方式：正数的反码与原码相同；负数的反码符号位不变其余取反。比如：</p>
-<pre class="line-numbers language-none"><code class="language-none">+1 &#x3D; [原码]0000 0001 &#x3D; [反码]0000 0001；
--1 &#x3D; [原码]1000 0001 &#x3D; [反码]1111 1110。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h4 id="补码"><a href="#补码" class="headerlink" title="补码"></a>补码</h4><p>补码：正数的补码与原码相同；负数的补码符号位不变，其余按位取反后+1。比如：</p>
-<pre class="line-numbers language-none"><code class="language-none">+1 &#x3D; [原码]0000 0001 &#x3D; [反码]0000 0001 &#x3D; [补码]0000 0001；
--1 &#x3D; [原码]1000 0001 &#x3D; [反码]1111 1110 &#x3D; [补码]1111 1111。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">+1 &#x3D; 0000 0001[原码]；
+-1 &#x3D; 1000 0001[原码]。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="反码"><a href="#反码" class="headerlink" title="反码"></a>反码</h4><p>反码：正数的反码与原码相同；负数的反码符号位不变其余取反。比如：</p>
+<pre class="line-numbers language-none"><code class="language-none">+1 &#x3D; 0000 0001[原码] &#x3D; 0000 0001[反码]；
+-1 &#x3D; 1000 0001[原码] &#x3D; 1111 1110[反码]。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="补码"><a href="#补码" class="headerlink" title="补码"></a>补码</h4><p>补码：正数的补码与原码相同；负数的补码符号位不变，其余位取反后+1。比如：</p>
+<pre class="line-numbers language-none"><code class="language-none">+1 &#x3D; 0000 0001[原码] &#x3D; 0000 0001[补码]；
+-1 &#x3D; 1000 0001[原码] &#x3D; 1111 1111[补码]。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h2 id="位运算的算法"><a href="#位运算的算法" class="headerlink" title="位运算的算法"></a>位运算的算法</h2><h3 id="按位与（-amp-）"><a href="#按位与（-amp-）" class="headerlink" title="按位与（&amp;）"></a>按位与（&amp;）</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 按位与（&amp;）: 两个1为1</span>
 <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">&amp;</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0011 &amp; 0110 = 0010 = 2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -462,9 +460,9 @@
 <h3 id="按位异或（-）"><a href="#按位异或（-）" class="headerlink" title="按位异或（^）"></a>按位异或（^）</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 按位异或（^）: 相反为1</span>
 <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">^</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0010 ^ 0110 = 0100 = 4</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h3 id="按位取反（-）"><a href="#按位取反（-）" class="headerlink" title="按位取反（~）"></a>按位取反（~）</h3><p>是对补码进行了取反<br>补码 &gt; 取反 &gt; 补码 = 原码；也可以用此公式计算<code>~x = -(x+1)</code>;</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token operator">~</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ~0000 0100 > 0000 0100[补码] > 1111 1011[取反] > 1000 0101[补码] = -5</span>
-<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token operator">~</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ~1000 0100 > 1111 1100[补码] > 0000 0011 > 0000 0011 = 3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="按位取反（-）"><a href="#按位取反（-）" class="headerlink" title="按位取反（~）"></a>按位取反（~）</h3><p>补码 &gt; 取反 &gt; 补码 = 原码；也可以用此公式计算<code>~x = -(x+1)</code>;</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token operator">~</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ~0000 0100[原码] > 0000 0100[补码] > 1111 1011[取反] > 1000 0101[补码] = -5</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token operator">~</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ~1000 0100 > 1111 1100 > 0000 0011 > 0000 0011 = 3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h3 id="按位左移（-lt-lt-）"><a href="#按位左移（-lt-lt-）" class="headerlink" title="按位左移（&lt;&lt;）"></a>按位左移（&lt;&lt;）</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 按位左移（&lt;&lt;）: 向左移一位</span>
 <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token operator">&lt;&lt;</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 00000110 &lt;&lt; 2 = 00011000 = 24</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -517,7 +515,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://z-hansu.gitee.io/2019/04/09/wei-yun-suan/">https://z-hansu.gitee.io/2019/04/09/wei-yun-suan/</a>
+                    <a href="https://z-hansu.gitee.io/2021/04/21/wei-yun-suan/">https://z-hansu.gitee.io/2021/04/21/wei-yun-suan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -606,13 +604,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/04/09/hello-world/">
+                <a href="/2021/04/26/nan-ge-zi-liang-shou/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="南歌子">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">南歌子</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -623,14 +621,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-09
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-26
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%A8%8B%E5%BA%8F/" class="post-category">
-                                    程序
+                            <a href="/categories/%E8%AF%97%E8%AF%8D/" class="post-category">
+                                    诗词
                                 </a>
                             
                             
@@ -640,8 +638,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/%E8%AF%8D/">
+                        <span class="chip bg-color">词</span>
                     </a>
                     
                 </div>
@@ -655,7 +653,7 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2019/04/09/wei-yun-suan/">
+                <a href="/2021/04/21/wei-yun-suan/">
                     <div class="card-image">
                         
                         
@@ -672,14 +670,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-21
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%A8%8B%E5%BA%8F/" class="post-category">
-                                    程序
+                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
+                                    编程
                                 </a>
                             
                             
@@ -894,11 +892,19 @@
 
 
 
+    <a href="mailto:2673031505@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
 
 
 
 
 
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2673031505" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2673031505" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
 
 
 
