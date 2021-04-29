@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="南歌子, hansu&#39;s">
+    <meta name="keywords" content="位运算, hansu&#39;s">
     <meta name="description" content="醒来天未明。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>南歌子 | hansu&#39;s</title>
+    <title>位运算 | hansu&#39;s</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -268,12 +268,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">南歌子</h1>
+                    <h1 class="description center-align post-title">位运算</h1>
                 </div>
             </div>
         </div>
@@ -283,10 +283,104 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: var(--theme-color);
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: var(--theme-color);
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -295,8 +389,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%AF%8D/">
-                                <span class="chip bg-color">词</span>
+                            <a href="/tags/code/">
+                                <span class="chip bg-color">code</span>
                             </a>
                         
                     </div>
@@ -307,8 +401,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E8%AF%97%E8%AF%8D/" class="post-category">
-                                诗词
+                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
+                                编程
                             </a>
                         
                     </div>
@@ -320,7 +414,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-26
+                    2021-04-21
                 </div>
                 
 
@@ -341,17 +435,66 @@
         
 
         
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div style="max-width: 600px;margin: 0 auto; padding: 30px;">
-    <center style="font-weight: bold;font-size: 1.6rem;margin-bottom: 20px;">其一</center>
-    <p style="text-indent: 2em;font-size: 1.3rem; line-height: 2rem;">一曲催人叹，千年几度重。流光杯盏绕帘栊，声散忽惊昔事已成空。</p>
-    <p style="text-indent: 2em;font-size: 1.3rem; line-height: 2rem;">乍暖风难静，怜花遍地红。浮生何必怨相逢，无可觅时又恨梦匆匆。</p>
-    <center style="font-weight: bold;font-size: 1.6rem;margin-bottom: 20px;">其二</center>
-    <p style="text-indent: 2em;font-size: 1.3rem; line-height: 2rem;">霞散随风远，寒天映日红。昔年锦瑟话愁浓，终是别时归处又相逢。</p>
-    <p style="text-indent: 2em;font-size: 1.3rem; line-height: 2rem;">曾恐情难定，如今淡月胧。人之于世自缘成，一梦红楼缘尽各西东。</p>
-</div>
+                <p><strong><center>位运算符是在数字底层（即表示数字的32个数位）进行操作的。</center></strong></p>
+<h2 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h2><h3 id="机器数与真值"><a href="#机器数与真值" class="headerlink" title="机器数与真值"></a>机器数与真值</h3><p style="text-indent: 2em;">机器数是指一个数在计算机中的二进制表现形式，最高位是符号位，0为正，1为负。因为第一位是符号位，所以机器数的形式值就不是本身真正的数值，本身真正的数值称为真值。</p>
+
+<h3 id="原码、反码与补码"><a href="#原码、反码与补码" class="headerlink" title="原码、反码与补码"></a>原码、反码与补码</h3><h4 id="原码"><a href="#原码" class="headerlink" title="原码"></a>原码</h4><p>原码就是机器数(符号位加上真值的绝对值)。第一位表示符号，其余位表示值。比如：</p>
+<pre class="line-numbers language-none"><code class="language-none">+1 &#x3D; 0000 0001[原码]；
+-1 &#x3D; 1000 0001[原码]。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="反码"><a href="#反码" class="headerlink" title="反码"></a>反码</h4><p>反码：正数的反码与原码相同；负数的反码符号位不变其余取反。比如：</p>
+<pre class="line-numbers language-none"><code class="language-none">+1 &#x3D; 0000 0001[原码] &#x3D; 0000 0001[反码]；
+-1 &#x3D; 1000 0001[原码] &#x3D; 1111 1110[反码]。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="补码"><a href="#补码" class="headerlink" title="补码"></a>补码</h4><p>补码：正数的补码与原码相同；负数的补码符号位不变，其余位取反后+1。比如：</p>
+<pre class="line-numbers language-none"><code class="language-none">+1 &#x3D; 0000 0001[原码] &#x3D; 0000 0001[补码]；
+-1 &#x3D; 1000 0001[原码] &#x3D; 1111 1111[补码]。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="位运算的算法"><a href="#位运算的算法" class="headerlink" title="位运算的算法"></a>位运算的算法</h2><h3 id="按位与（-amp-）"><a href="#按位与（-amp-）" class="headerlink" title="按位与（&amp;）"></a>按位与（&amp;）</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 按位与（&amp;）: 两个1为1</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">&amp;</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0011 &amp; 0110 = 0010 = 2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="按位或（-）"><a href="#按位或（-）" class="headerlink" title="按位或（|）"></a>按位或（|）</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 按位或（|）: 一个1即为1</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">|</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0011 | 1000 = 1011 = 11</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="按位异或（-）"><a href="#按位异或（-）" class="headerlink" title="按位异或（^）"></a>按位异或（^）</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 按位异或（^）: 相反为1</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">^</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0010 ^ 0110 = 0100 = 4</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="按位取反（-）"><a href="#按位取反（-）" class="headerlink" title="按位取反（~）"></a>按位取反（~）</h3><p>补码 &gt; 取反 &gt; 补码 = 原码；也可以用此公式计算<code>~x = -(x+1)</code>;</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token operator">~</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ~0000 0100[原码] > 0000 0100[补码] > 1111 1011[取反] > 1000 0101[补码] = -5</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token operator">~</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ~1000 0100 > 1111 1100 > 0000 0011 > 0000 0011 = 3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="按位左移（-lt-lt-）"><a href="#按位左移（-lt-lt-）" class="headerlink" title="按位左移（&lt;&lt;）"></a>按位左移（&lt;&lt;）</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 按位左移（&lt;&lt;）: 向左移一位</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token operator">&lt;&lt;</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 00000110 &lt;&lt; 2 = 00011000 = 24</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="按位右移（-gt-gt-）"><a href="#按位右移（-gt-gt-）" class="headerlink" title="按位右移（&gt;&gt;）"></a>按位右移（&gt;&gt;）</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 按位右移（>>）: 向右移一位</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token operator">>></span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0110 >> 1 = 0011 = 3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="位运算的用处"><a href="#位运算的用处" class="headerlink" title="位运算的用处"></a>位运算的用处</h2><h3 id="求奇偶性"><a href="#求奇偶性" class="headerlink" title="求奇偶性"></a>求奇偶性</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">judgeParity</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> result <span class="token operator">=</span> a <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>result <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a <span class="token operator">+</span> <span class="token string">"为偶数"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a <span class="token operator">+</span> <span class="token string">"为奇数"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="两个数交换位置"><a href="#两个数交换位置" class="headerlink" title="两个数交换位置"></a>两个数交换位置</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">exchangeNum</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"a:"</span> <span class="token operator">+</span> a <span class="token operator">+</span> <span class="token string">"\t"</span> <span class="token operator">+</span> <span class="token string">"b:"</span> <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    a <span class="token operator">=</span> a <span class="token operator">^</span> b<span class="token punctuation">;</span> <span class="token comment">/* 0010 ^ 0110 = 0100	a = 4 */</span>
+    b <span class="token operator">=</span> b <span class="token operator">^</span> a<span class="token punctuation">;</span> <span class="token comment">/* 0110 ^ 0100 = 0010	b = 2 */</span>
+    a <span class="token operator">=</span> a <span class="token operator">^</span> b<span class="token punctuation">;</span> <span class="token comment">/* 0100 ^ 0110 = 0110	a = 6 */</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"a:"</span> <span class="token operator">+</span> a <span class="token operator">+</span> <span class="token string">"\t"</span> <span class="token operator">+</span> <span class="token string">"b:"</span> <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="两个数的平均数"><a href="#两个数的平均数" class="headerlink" title="两个数的平均数"></a>两个数的平均数</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">averageNum</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> average <span class="token operator">=</span> <span class="token punctuation">(</span>a <span class="token operator">&amp;</span> b<span class="token punctuation">)</span><span class="token operator">+</span><span class="token punctuation">(</span><span class="token punctuation">(</span>a <span class="token operator">^</span> b<span class="token punctuation">)</span> <span class="token operator">>></span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"average:"</span> <span class="token operator">+</span> average<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -377,7 +520,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://z-hansu.gitee.io/2021/04/26/nan-ge-zi-liang-shou/">https://z-hansu.gitee.io/2021/04/26/nan-ge-zi-liang-shou/</a>
+                    <a href="https://z-hansu.gitee.io/posts/40057382.html">https://z-hansu.gitee.io/posts/40057382.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -415,8 +558,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%AF%8D/">
-                                    <span class="chip bg-color">词</span>
+                                <a href="/tags/code/">
+                                    <span class="chip bg-color">code</span>
                                 </a>
                             
                         </div>
@@ -466,13 +609,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/04/26/geng-lou-zi/">
+                <a href="/posts/3746816291.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="更漏子">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="南歌子">
                         
-                        <span class="card-title">更漏子</span>
+                        <span class="card-title">南歌子</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -512,10 +655,10 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2021/04/21/wei-yun-suan/">
+                <a href="/posts/40057382.html">
                     <div class="card-image">
                         
                         
@@ -546,6 +689,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -619,6 +763,100 @@
 
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 
