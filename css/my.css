@@ -46,8 +46,8 @@ a {
 }
 
 .page-footer {
-    height: 80px;
-    padding: 0 !important;
+    box-sizing: content-box;
+    padding: 20px 0 !important;
 }
 
 .page-footer .container {
