@@ -62,3 +62,7 @@ footer .copy-right {
     width: 80%;
     display: inline-block;
 }
+
+.toast {
+    background-color: var(--theme-color) !important;
+}
