@@ -66,3 +66,57 @@ footer .copy-right {
 .toast {
     background-color: var(--theme-color) !important;
 }
+
+/* 文章 */
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articles-container .article {
+    width: 90vw;
+    max-width: 830px;
+}
+
+.articles-container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-card {
+    padding: 10px 5% 6px;
+}
+.articles-container .publish-date {
+    color: #999;
+    margin-bottom: 10px;
+}
+.summary {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card-load {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+.article-tags {
+    padding-top: 10px;
+    width: 90%;
+    text-align: center;
+    border-top: 1px dashed #ccc;
+}
+
+.articles-container .card-title {
+    font-size: 26px !important;
+    color: #333;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-weight: 300;
+    font-size: 120%;
+    transition: all .5s;
+    margin-bottom: 10px;
+}

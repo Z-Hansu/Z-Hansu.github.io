@@ -36,7 +36,7 @@
 
 <body>
     <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
+    <nav id="headNav" class="bg-color">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
@@ -286,206 +286,7 @@
 
 </header>
 
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item theme-bg-color white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                寒酥
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "前天遇到了小兔，昨天遇到了小鹿，今天遇到了你",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 200,
-                        loop: true,
-                        backSpeed: 100,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(https://i.loli.net/2021/04/30/fJkCyKIZ6xXwt2u.jpg)');
-</script>
-
-
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                    <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
-                    </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/Z-Hansu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:2673031505@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2673031505" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2673031505" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-</div>
-        </div>
-    </div>
-
-    
-</div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
-
-
-<main class="content">
+    <main class="content">
 
     
     <div id="indexCard" class="index-card">
@@ -530,191 +331,140 @@
 
     <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/119896500.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="爬取网页内容并导出excel">
-                            
-                            <span class="card-title">爬取网页内容并导出excel</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <!-- 隐藏文章简介 -->
-                        
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
-                                    编程
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                    <!-- 隐藏文章标签 -->
+      <div class="articles-container">
+          
+          <div class="article" data-aos="zoom-in">
+              <div class="card article-card">
+                  <a href="/posts/119896500.html" class="card-title">
+                    <span>爬取网页内容并导出excel</span>
+                  </a>
+                  <span class="publish-date">
+                      <i class="far fa-clock fa-fw icon-date"></i>2021-05-05
+                  </span>
+                  <div class="summary block-with-text">
                     
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/2820761162.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="微信小程序封装请求">
-                            
-                            <span class="card-title">微信小程序封装请求</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <!-- 隐藏文章简介 -->
-                        
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
-                                    编程
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                    <!-- 隐藏文章标签 -->
+                        获取网页内容并导出excel。
                     
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/3983202199.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="更漏子">
-                            
-                            <span class="card-title">更漏子</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <!-- 隐藏文章简介 -->
-                        
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%AF%97%E8%AF%8D/" class="post-category">
-                                    诗词
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                    <!-- 隐藏文章标签 -->
+                  </div>
+                  <a href="/posts/119896500.html" class="card-load">阅读全文<span>>></span></a>
+                  
+                  <div class="article-tags">
+                      
+                      <a href="/tags/node/">
+                          <span class="chip bg-color">node</span>
+                      </a>
+                      
+                  </div>
+                  
+              </div>
+          </div>
+          
+          <div class="article" data-aos="zoom-in">
+              <div class="card article-card">
+                  <a href="/posts/2820761162.html" class="card-title">
+                    <span>微信小程序封装请求</span>
+                  </a>
+                  <span class="publish-date">
+                      <i class="far fa-clock fa-fw icon-date"></i>2021-04-29
+                  </span>
+                  <div class="summary block-with-text">
                     
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/3746816291.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="南歌子">
-                            
-                            <span class="card-title">南歌子</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <!-- 隐藏文章简介 -->
-                        
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%AF%97%E8%AF%8D/" class="post-category">
-                                    诗词
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                    <!-- 隐藏文章标签 -->
+                        封装微信小程序请求。
                     
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/40057382.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="位运算">
-                            
-                            <span class="card-title">位运算</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <!-- 隐藏文章简介 -->
-                        
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-21
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
-                                    编程
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                    <!-- 隐藏文章标签 -->
+                  </div>
+                  <a href="/posts/2820761162.html" class="card-load">阅读全文<span>>></span></a>
+                  
+                  <div class="article-tags">
+                      
+                      <a href="/tags/miniprogram/">
+                          <span class="chip bg-color">miniprogram</span>
+                      </a>
+                      
+                  </div>
+                  
+              </div>
+          </div>
+          
+          <div class="article" data-aos="zoom-in">
+              <div class="card article-card">
+                  <a href="/posts/3983202199.html" class="card-title">
+                    <span>更漏子</span>
+                  </a>
+                  <span class="publish-date">
+                      <i class="far fa-clock fa-fw icon-date"></i>2021-04-26
+                  </span>
+                  <div class="summary block-with-text">
                     
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
+                        醒来天未明。
+                    
+                  </div>
+                  <a href="/posts/3983202199.html" class="card-load">阅读全文<span>>></span></a>
+                  
+                    <div class="article-tags">
+                      
+                      <a href="/categories/%E8%AF%97%E8%AF%8D/">
+                          <span class="chip bg-color">诗词</span>
+                      </a>
+                      
+                  </div>
+                  
+              </div>
+          </div>
+          
+          <div class="article" data-aos="zoom-in">
+              <div class="card article-card">
+                  <a href="/posts/3746816291.html" class="card-title">
+                    <span>南歌子</span>
+                  </a>
+                  <span class="publish-date">
+                      <i class="far fa-clock fa-fw icon-date"></i>2021-04-26
+                  </span>
+                  <div class="summary block-with-text">
+                    
+                        浮生何必怨相逢，无可觅时又恨梦匆匆。
+                    
+                  </div>
+                  <a href="/posts/3746816291.html" class="card-load">阅读全文<span>>></span></a>
+                  
+                    <div class="article-tags">
+                      
+                      <a href="/categories/%E8%AF%97%E8%AF%8D/">
+                          <span class="chip bg-color">诗词</span>
+                      </a>
+                      
+                  </div>
+                  
+              </div>
+          </div>
+          
+          <div class="article" data-aos="zoom-in">
+              <div class="card article-card">
+                  <a href="/posts/40057382.html" class="card-title">
+                    <span>位运算</span>
+                  </a>
+                  <span class="publish-date">
+                      <i class="far fa-clock fa-fw icon-date"></i>2021-04-21
+                  </span>
+                  <div class="summary block-with-text">
+                    
+                        位运算符是在数字底层（即表示数字的32个数位）进行操作的。
+                    
+                  </div>
+                  <a href="/posts/40057382.html" class="card-load">阅读全文<span>>></span></a>
+                  
+                  <div class="article-tags">
+                      
+                      <a href="/tags/code/">
+                          <span class="chip bg-color">code</span>
+                      </a>
+                      
+                  </div>
+                  
+              </div>
+          </div>
+          
+      </div>
+  </article>
 </main>
 
 
@@ -724,15 +474,7 @@
     
     <div class="container">
         <div class="copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2021</span>
-            
             <span id="year">2021</span>
-            <a href="/about" target="_blank">Hansu</a>
-            |&nbsp;由&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;驱动
-            |&nbsp;主题&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
             
             
             
@@ -1018,11 +760,6 @@ $(function () {
     <!--腾讯兔小巢-->
     
     
-    <script type="text/javascript" color="0,0,255"
-        pointColor="0,0,255" opacity='0.7'
-        zIndex="-1" count="99"
-        src="/libs/background/canvas-nest.js"></script>
-    
 
     
 
@@ -1032,6 +769,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false}});</script></body>
 
 </html>
