@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="南歌子, hansu&#39;s">
+    <meta name="keywords" content="vue使用i18n, hansu&#39;s">
     <meta name="description" content="醒来天未明。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>南歌子 | hansu&#39;s</title>
+    <title>vue使用i18n | hansu&#39;s</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -290,12 +290,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">南歌子</h1>
+                    <h1 class="description center-align post-title">vue使用i18n</h1>
                 </div>
             </div>
         </div>
@@ -305,19 +305,117 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: var(--theme-color);
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: var(--theme-color);
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/vue/">
+                                <span class="chip bg-color">vue</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -325,8 +423,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E8%AF%97%E8%AF%8D/" class="post-category">
-                                诗词
+                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
+                                编程
                             </a>
                         
                     </div>
@@ -338,21 +436,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-26
+                    2021-05-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-05-11
+                    2021-05-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    108
+                    339
                 </div>
                 
 
@@ -382,14 +480,96 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div style="max-width: 600px;margin: 0 auto; padding: 30px;">
-    <center style="font-weight: bold;font-size: 1.6rem;margin-bottom: 20px;">其一</center>
-    <p style="text-indent: 2em;font-size: 1.3rem; line-height: 2rem;">一曲催人叹，千年几度重。流光杯盏绕帘栊，声散忽惊昔事已成空。</p>
-    <p style="text-indent: 2em;font-size: 1.3rem; line-height: 2rem;">乍暖风难静，怜花遍地红。浮生何必怨相逢，无可觅时又恨梦匆匆。</p>
-    <center style="font-weight: bold;font-size: 1.6rem;margin-bottom: 20px;">其二</center>
-    <p style="text-indent: 2em;font-size: 1.3rem; line-height: 2rem;">霞散随风远，寒天映日红。昔年锦瑟话愁浓，终是别时归处又相逢。</p>
-    <p style="text-indent: 2em;font-size: 1.3rem; line-height: 2rem;">曾恐情难定，如今淡月胧。人之于世自缘成，一梦红楼缘尽各西东。</p>
-</div>
+                <p>i18n是一个专门用于处理多语言的插件，其来源是英文单词internationalization的首末字符i和n,中间部分nternationalizatio刚好18个字母,故被起名i18n。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>使用npm安装:</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> vue-i18n<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="在main-js中引用"><a href="#在main-js中引用" class="headerlink" title="在main.js中引用"></a>在main.js中引用</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">import</span> VueI18n <span class="token keyword">from</span> <span class="token string">'vue-i18n'</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>VueI18n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 引入语言包，注意路径</span>
+<span class="token keyword">import</span> zh <span class="token keyword">from</span> <span class="token string">'@/common/languages/zh.js'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> en <span class="token keyword">from</span> <span class="token string">'@/common/languages/en.js'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> messages <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+	<span class="token string">'en'</span><span class="token operator">:</span> en<span class="token punctuation">,</span>
+	<span class="token string">'zh'</span><span class="token operator">:</span> zh
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> i18n <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VueI18n</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+	locale<span class="token operator">:</span> <span class="token string">'zh'</span><span class="token punctuation">,</span> <span class="token comment">// 默认语言, 值为 messages 的 key 值</span>
+	messages<span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+	i18n<span class="token punctuation">,</span>
+	<span class="token operator">...</span>App
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="构建语言包"><a href="#构建语言包" class="headerlink" title="构建语言包"></a>构建语言包</h2><p>zh.js</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// zh.js</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+    language<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		name<span class="token operator">:</span> <span class="token string">'中文'</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+	common<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		confirm<span class="token operator">:</span> <span class="token string">'确定'</span><span class="token punctuation">,</span>
+		next<span class="token operator">:</span> <span class="token string">'下一步'</span><span class="token punctuation">,</span>
+        <span class="token comment">// ......</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+	index<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token comment">// ......</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>en.js</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// en.js</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+    language<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		name<span class="token operator">:</span> <span class="token string">'English'</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+	common<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		confirm<span class="token operator">:</span> <span class="token string">'confirm'</span><span class="token punctuation">,</span>
+		next<span class="token operator">:</span> <span class="token string">'next'</span><span class="token punctuation">,</span>
+        price<span class="token operator">:</span> <span class="token string">'单价: &#123;price&#125;个'</span>
+        <span class="token comment">// ......</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+	index<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token comment">// ......</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;template&gt;
+    &lt;!-- 普通调用 --&gt;
+	&lt;view&gt;&#123;&#123; $t(&#39;common.confirm&#39;) &#125;&#125;&lt;&#x2F;view&gt;
+    &lt;!-- 含有变量 --&gt;
+    &lt;view&gt;&#123;&#123; $t(&#39;common.price&#39;, &#123; price: goods.price &#125;) &#125;&#125;&lt;&#x2F;view&gt;
+&lt;&#x2F;template&gt;
+
+&lt;script&gt;
+	export default &#123;
+        &#x2F;&#x2F; js 中使用
+		onLoad() &#123;
+			console.log(this.$t(&#39;common.next&#39;));
+		&#125;
+	&#125;
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="语言切换"><a href="#语言切换" class="headerlink" title="语言切换"></a>语言切换</h2><pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;template&gt;
+	&lt;view @click&#x3D;&quot;switchLanguage&quot;&gt;切换语言&lt;&#x2F;view&gt;
+&lt;&#x2F;template&gt;
+
+&lt;script&gt;
+	export default &#123;
+		methods: &#123;
+			switchLanguage() &#123;
+				this.$i18n.locale &#x3D; this.$i18n.locale &#x3D;&#x3D;&#x3D; &#39;en&#39; ? &#39;zh&#39; : &#39;en&#39;;
+			&#125;
+		&#125;
+	&#125;
+&lt;&#x2F;script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
                 
             </div>
             <hr/>
@@ -415,7 +595,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://z-hansu.gitee.io/posts/3746816291.html">https://z-hansu.gitee.io/posts/3746816291.html</a>
+                    <a href="https://z-hansu.gitee.io/posts/3729701022.html">https://z-hansu.gitee.io/posts/3729701022.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -452,7 +632,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block; margin: 0.3rem 0;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/vue/">
+                                    <span class="chip bg-color">vue</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -581,26 +765,26 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/3983202199.html">
+                <a href="/posts/2902599615.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="更漏子">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="google/百度 搜索技巧">
                         
-                        <span class="card-title">更漏子</span>
+                        <span class="card-title">google/百度 搜索技巧</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-26
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-19
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%AF%97%E8%AF%8D/" class="post-category">
-                                    诗词
+                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    工具
                                 </a>
                             
                             
@@ -617,19 +801,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/40057382.html">
+                <a href="/posts/133278758.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="位运算">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="一些好玩的css">
                         
-                        <span class="card-title">位运算</span>
+                        <span class="card-title">一些好玩的css</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-14
                             </span>
                         <span class="publish-author">
                             
@@ -708,6 +892,100 @@
 
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 

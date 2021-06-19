@@ -719,24 +719,20 @@
         <div class="copy-right">
             <span id="year">2021</span>
             
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_container_site_pv2">
                 &nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
                     class="footer-color"></span>&nbsp;次
             </span>
             
             
-            <span id="busuanzi_container_site_uv">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+            <span id="busuanzi_container_site_uv2">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
                     class="footer-color"></span>&nbsp;人
             </span>
             
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                    class="white-color">1.9k</span>&nbsp;字
+                    class="white-color">2.7k</span>&nbsp;字
                 
             
             <br>
@@ -786,36 +782,6 @@
             
             
         </div>
-
-        <!-- 平台链接 -->
-        <!-- <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/Z-Hansu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:2673031505@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2673031505" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2673031505" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-</div> -->
     </div>
 </footer>
 
@@ -1011,6 +977,28 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+
+
+    <div class="state-container">
+        <div class="state-ball" style="--offset: 10;">
+            <div class="my-wave"></div>
+            <div class="my-progress"></div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const ball = document.getElementsByClassName('state-ball')[0];
+            function changeStateBallProgress(v) {
+                let value = v ? v : Math.random() * 100;
+                console.log(Math.ceil(value));
+                ball.style.cssText = `--offset: ${Math.ceil(value)};`;
+            }
+            ball.addEventListener('click', function() {
+                changeStateBallProgress(Math.random() * 100);
+            })
+        })()
+    </script>
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false}});</script></body>
 

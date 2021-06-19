@@ -1160,7 +1160,8 @@ article .article-tags .chip {
 }
 
 #articleContent img {
-    max-width: 100%;
+    max-width: 800px;
+    width: 100%;
     height: auto;
     cursor: url(../medias/mouse_icon/pointer.cur), default;
 }
